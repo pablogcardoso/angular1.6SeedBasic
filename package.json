@@ -1,0 +1,23 @@
+{
+  "name": "angular1.6SeedBasic",
+  "version": "1.0.0",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/pablogcardoso/angular1.6SeedBasic.git"
+    }
+  ],
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.8",
+    "angular": "^1.6.5",
+    "angular-animate": "^1.6.5",
+    "angular-aria": "^1.6.5",
+    "angular-messages": "^1.6.5"
+  },
+  "devDependencies": {
+    "express": "^4.16.1"
+  },
+  "scripts": {
+    "prestart": "npm update"
+  }
+}
