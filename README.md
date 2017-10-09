@@ -1,6 +1,9 @@
 # angular1.6SeedBasic#
 Basic structure for AngularJs project 
-## Structure
+## Specs
+-This project use UI-Route for make routing with multiple views.
+-Use Angular 1.6.x or leter
+-Need Nodejs 6.x or leter
 
 ## Installation
 **Note**
@@ -26,5 +29,5 @@ For run your project need init the node server:
 # or run :
 > npm serve
 ```
-This project run in port 9000, and you need put in the browser: http://localhost:9000/
+This project run in port 9000, open browser and go to: http://localhost:9000/
 
