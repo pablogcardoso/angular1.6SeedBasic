@@ -1,8 +1,8 @@
 # angular1.6SeedBasic#
 Basic structure for AngularJs project 
-##Structure##
+## Structure
 
-##Installation##
+## Installation
 **Note**
 **This version require Node 6.11.x or leter.**
 In order to start the seed use: 
@@ -19,7 +19,7 @@ For run your project need init the node server:
 # or run :
 > npm serve
 ```
-##Running##
+## Running
 For run your project need init the node server:
 ```bash
 > node server.js
