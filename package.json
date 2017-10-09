@@ -18,6 +18,7 @@
     "express": "^4.16.1"
   },
   "scripts": {
-    "prestart": "npm update"
+    "prestart": "npm update",
+    "serve":"node server"
   }
 }
