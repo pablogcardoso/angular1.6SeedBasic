@@ -25,9 +25,8 @@ For run your project need init the node server:
 ## Running
 For run your project need init the node server:
 ```bash
-> node server.js
-# or run :
-> npm serve
+> npm start
+
 ```
 This project run in port 9000, open browser and go to: http://localhost:9000/
 
