@@ -33,4 +33,4 @@ angular.module('AppBasic')
            /* meke loggin redirection functions here....*/
         });
         
-    });;
+    });
