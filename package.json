@@ -15,7 +15,12 @@
     "angular-messages": "^1.6.5"
   },
   "devDependencies": {
-    "express": "^4.16.1"
+    "express": "^4.16.1",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.9.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.0.0",
+    "gulp-uglify": "^3.0.0"
   },
   "scripts": {
     "prestart": "npm update",
