@@ -25,3 +25,11 @@ For run your project need init the node server:
 ```
 This project run in port 9000, open browser and go to: http://localhost:9000/
 
+## Production
+For run your project in production, is recomendable compress and concat your css and javascript.
+For that use Gulp.
+```bash
+> myproyect/ gulp build
+
+```
+This line concat and compress all in /dest directory.
