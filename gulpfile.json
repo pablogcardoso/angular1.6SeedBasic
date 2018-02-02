@@ -7,20 +7,34 @@ var cleanCSS = require('gulp-clean-css');
 
 gulp.task('css', function () {
   return gulp.src('css/**/*.css')
-    .pipe(concatCss("main.css"))
+    .pipe(concatCss("main.min.css"))
     .pipe(cleanCSS({compatibility: 'ie8'}))
     .pipe(gulp.dest('dist/css/'));
 });
 
-gulp.task('js', function (cb) {
+gulp.task('js-core', function (cb) {
   pump([
-        gulp.src(['app/*.js','app/main/*.js','app/main/services/*.js']),
-        uglify(),
-        concat('all.js'),
-        gulp.dest('dist')
+        gulp.src(['node_modules/angular/angular.min.js',
+        'node_modules/@uirouter/angularjs/release/angular-ui-router.min.js',
+        'node_modules/angular-animate/angular-animate.min.js',
+        'node_modules/angular-aria/angular-aria.min.js']),
+        concat('core.min.js'),
+        gulp.dest('dist/js/')
     ],
     cb
   );
 });
 
-gulp.task('build',  ['js','css']);
+
+gulp.task('js', function (cb) {
+  pump([
+        gulp.src(['app/**/*.js']),
+        uglify(),
+        concat('main.min.js'),
+        gulp.dest('dist/js/')
+    ],
+    cb
+  );
+});
+
+gulp.task('build',  ['js','js-core','css']);
